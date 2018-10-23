@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   public addPost() {
-
+    this.httpService.postPost(this.post).subscribe(data => console.log(data));
   }
 
   private getPostsData() {
@@ -30,6 +30,5 @@ export class AppComponent implements OnInit {
 
   public loadData() {
     this.httpService.getPosts().subscribe((data: Post[]) => this.posts = data);
-    console.log(this.posts);
   }
 };

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Post } from './post';
 
 @Injectable()
 export class HttpService {
@@ -9,6 +10,10 @@ export class HttpService {
 
   getPosts() {
     return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  }
+
+  postPost(post: Post) {
+    return this.http.post('https://jsonplaceholder.typicode.com/posts', post);
   }
 }
 
