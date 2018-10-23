@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from './post';
+import { HttpService } from './http.service';
+
 
 @Component({
   selector: 'app-root',
@@ -9,10 +11,13 @@ import { Post } from './post';
 
 export class AppComponent implements OnInit {
   private post: Post = { userId: 5, id: 101, title: 'SomeTitle', body: 'somebody' };
+  public posts: Post[] = [];
 
-  constructor() { }
+  constructor(private httpService: HttpService) {
+  }
 
   ngOnInit() {
+    this.loadData();
   }
 
   public addPost() {
@@ -21,5 +26,10 @@ export class AppComponent implements OnInit {
 
   private getPostsData() {
 
+  }
+
+  public loadData() {
+    this.httpService.getPosts().subscribe((data: Post[]) => this.posts = data);
+    console.log(this.posts);
   }
 };
