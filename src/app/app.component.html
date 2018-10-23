@@ -1,8 +1,21 @@
-<p>
-  <button (click)="addPost()">
-    ADD POST
-  </button>
-</p>
+<div>
+  <p>
+    <button (click)="addPost()">
+      ADD POST
+    </button>
+  </p>
+  <p>
+    <button (click)="updatePost()">
+      UPDATE POST
+    </button>
+  </p>
+
+  <p>
+    <button (click)="deletePost()">
+      DELETE POST
+    </button>
+  </p>
+</div>
 
 <table>
   <tr>
@@ -14,7 +27,7 @@
       {{post.title}}
     </td>
     <td>
-     {{post.body}}
+      {{post.body}}
     </td>
   </tr>
 </table>

@@ -21,11 +21,19 @@ export class AppComponent implements OnInit {
   }
 
   public addPost() {
-    this.httpService.postPost(this.post).subscribe(data => console.log(data));
+    this.httpService.postPost(this.post).subscribe(data => console.log('add post: ', data));
   }
 
-  private getPostsData() {
+  public updatePost() {
+    const post = this.posts[0];
 
+    this.httpService.putPost(post).subscribe(data => console.log('update post: ', data));
+  }
+
+  public deletePost() {
+    const post = this.posts[0];
+
+    this.httpService.deletePost(post).subscribe(data => console.log('delete post: ', data));
   }
 
   public loadData() {
