@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()" name="post">
+  <input type="text" pInputText [(ngModel)]="post.title" name="title" placeholder="Title"/>
+  <input type="text" pInputText [(ngModel)]="post.description" name="description" placeholder="Description"/>
+
+
+  <p-button icon="pi pi-check" [label]="buttonLabel"></p-button>
+
+</form>

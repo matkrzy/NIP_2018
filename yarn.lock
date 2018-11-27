@@ -30,6 +30,13 @@
     "@ngtools/json-schema" "^1.1.0"
     rxjs "^5.5.6"
 
+"@angular/animations@5.2.10":
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.2.10.tgz#61718792e0922ac622fd7c6dfb0afbb996638692"
+  integrity sha512-QNYXqnti8BeFriNaZ/juLnO6l0MVlVNUmLycC9ma+pdTiEJl8rtgZ0WXxgOCjScyKpInkWn2J+m9FI/78SYFpw==
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/cli@1.7.4":
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.7.4.tgz#b6c31b5fc6f8ea07e55b1b01a26422f5358a4ea6"
@@ -5208,6 +5215,16 @@ pretty-error@^2.0.2:
   dependencies:
     renderkid "^2.0.1"
     utila "~0.4"
+
+primeicons@^1.0.0-beta.10:
+  version "1.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-1.0.0-beta.10.tgz#b1a27a8a279c0b28d4bd537a29709b39cfebbd9f"
+  integrity sha512-kSXJdNWNYC4PmJInzYQDCPHjw8j7obmoxWaUVxV+RRmEKcOCmZabnDwihj7SQz38IRe1VNlLJlY/5As13C9TuA==
+
+primeng@^7.0.0-beta.1:
+  version "7.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-7.0.0-beta.1.tgz#fb007f64ce9324911561b72bab19126661f1565f"
+  integrity sha512-bhE+Tm8e7gsvhjoQ83pWqBR5twR/zgarrJcpGdMSObNwlauJXRczo/OoM2KVnf4wHjJsie6MK5wdepL11R4WhA==
 
 process-nextick-args@~2.0.0:
   version "2.0.0"

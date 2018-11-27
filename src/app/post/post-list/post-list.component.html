@@ -1,0 +1,22 @@
+<h3>Posts</h3>
+<p-table [value]="posts">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-post>
+    <tr>
+      <td>{{post.title}}</td>
+      <td>{{post.description}}</td>
+      <td>
+        <p-button icon="pi pi-trash" styleClass="ui-button-danger" (onClick)="deletePost(post.id)"></p-button>
+        <p-button icon="pi pi-pencil" styleClass="ui-button-primary"  [routerLink]="['/posts', post.id]"></p-button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<p-button icon="pi pi-plus" styleClass="ui-button-info" label="add new post" class="button button--add-post" routerLink="/posts/add" ></p-button>
