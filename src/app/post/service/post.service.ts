@@ -5,7 +5,7 @@ import { PostModel } from '../model/post.model';
 
 @Injectable()
 export class PostService {
-  private url = 'http://7710f21d.ngrok.io/api/v2';
+  private url = 'http://18f6dbc8.ngrok.io/api/v2';
 
   constructor(private http: HttpClient) {
   }

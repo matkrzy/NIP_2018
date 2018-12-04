@@ -20,6 +20,7 @@ export class PostFormComponent implements OnInit {
   @Input() post: PostModel;
   @Input() onSubmitAction;
   @Input() buttonLabel: string;
+  @Input() formId: string;
 
   constructor(private postService: PostService, private router: Router, private route: ActivatedRoute) {
   }

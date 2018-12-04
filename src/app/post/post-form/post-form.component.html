@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()" name="post">
+<form (ngSubmit)="onSubmit()" name="post" [id]="formId">
   <input type="text" pInputText [(ngModel)]="post.title" name="title" placeholder="Title"/>
   <input type="text" pInputText [(ngModel)]="post.description" name="description" placeholder="Description"/>
 
